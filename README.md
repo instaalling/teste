@@ -22,3 +22,4 @@ Como rodar o projeto:
 
 5° Rodar o comando vtex link 
 
+6° Acessar a url /faq 
