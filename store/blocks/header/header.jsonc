@@ -8,7 +8,7 @@
   "header-layout.desktop": {
     "children": [
       "flex-layout.row#1-desktop",
-      "sticky-layout#4-desktop",
+      "sticky-layout#2-desktop",
       "flex-layout.row#menu"
     ]
   },
@@ -33,13 +33,13 @@
       "width": "grow"
     }
   },
-  "sticky-layout#4-desktop": {
+  "sticky-layout#2-desktop": {
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#4-desktop"]
+    "children": ["flex-layout.row#2-desktop"]
   },
-  "flex-layout.row#4-desktop": {
+  "flex-layout.row#2-desktop": {
     "props": {
       "blockClass": "main-header",
       "horizontalAlign": "center",
