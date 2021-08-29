@@ -1,0 +1,161 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#1-desktop",
+      "sticky-layout#4-desktop",
+      "flex-layout.row#menu"
+    ]
+  },
+  "flex-layout.row#1-desktop": {
+    "children": ["notification.bar#Teste"],
+    "props": {
+      "fullWidth": "true"
+    }        
+  },
+  "notification.bar#Teste": {
+    "props": {
+      "content": "Teste Header Synapcom"
+    }
+  },
+
+  "flex-layout.row#menu": {
+    "children": ["flex-layout.col#category-menu"]
+  },
+
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "sticky-layout#4-desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#4-desktop"]
+  },
+  "flex-layout.row#4-desktop": {
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+
+      "flex-layout.col#logo-desktop",
+      "search-bar",
+      "flex-layout.row#containerHeader"
+    ]
+  },
+  "flex-layout.row#containerHeader":
+   {
+     "props": {
+      "blockClass": "contianerTeste"
+     },
+    "children":[
+      "login#login",
+      "rich-text#favorites",
+      "minicart.v2"
+    ]
+  },
+  "login#login": {
+    "props": {
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Acess Code LOG-IN",
+      "emailPlaceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "showPasswordVerificationIntoTooltip": true,
+      "showIconProfile": true,
+      "iconLabel": "Entre ou Cadastre-se"
+    }
+  },
+
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo#desktop"]
+  },
+  "flex-layout.col#category-menu": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["vtex.menu@2.x:menu#category-menu"]
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
+      "width": "180"
+    }
+  },
+  "header-layout.mobile": {
+    "children": ["sticky-layout#1-mobile"]
+  },
+  "sticky-layout#1-mobile": {
+    "children": [
+      "flex-layout.row#1-mobile",
+      "flex-layout.row#2-mobile"
+    ]
+  },
+  "flex-layout.row#1-mobile": {
+    "children": ["notification.bar#TesteMobile"],
+    "props": {
+      "fullWidth": "true"
+    }
+  },
+  "notification.bar#TesteMobile": {
+    "props": {
+      "content": "Teste Header Synapcom"
+    }
+  },
+  "flex-layout.row#2-mobile": {
+    "children": [
+      "logo#mobile",
+      "search-bar",
+      "login#loginmobile",
+      "rich-text#favorites",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "login#loginmobile": {
+    "props": {
+      "showIconProfile": true
+    }
+  },
+  
+  "rich-text#favorites": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "[Seus Favoritos](https://synapcom.myvtex.com/whishlist) ",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "help-message"
+    }
+  },
+
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
+      "width": "70"
+    }
+  }
+}

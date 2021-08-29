@@ -1,0 +1,204 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "menu-item#category-teste1",
+      "menu-item#category-teste2",
+      "menu-item#category-teste3"
+    ]
+  },
+  "menu-item#category-teste1": {
+    "props": {
+      "id": "menu-item-category-teste1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/teste1",
+        "noFollow": false,
+        "tagTitle": "Teste1",
+        "text": "Categoria teste 1"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#category-teste1"
+    ]
+  },
+  "vtex.menu@2.x:submenu#category-teste1": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#category-teste1"
+    ]
+  },
+  "vtex.menu@2.x:menu#category-teste1": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-teste1-clothing",
+      "menu-item#category-teste1-categoria",
+      "menu-item#category-teste1-categoria2"
+    ]
+  },
+  "menu-item#category-teste1-clothing": {
+    "props": {
+      "id": "menu-item-category-apparel-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/teste",
+        "noFollow": false,
+        "tagTitle": "teste",
+        "text": "teste"
+      }
+    }
+  },
+  "menu-item#category-teste1-categoria": {
+    "props": {
+      "id": "menu-item-category-apparel-categoria",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/teste",
+        "noFollow": false,
+        "tagTitle": "Categoria 2",
+        "text": "Categoria 2"
+      }
+    }
+  },
+  "menu-item#category-teste1-categoria2": {
+    "props": {
+      "id": "menu-item-category-apparel-categoria2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/teste2",
+        "noFollow": false,
+        "tagTitle": "Categoria 2",
+        "text": "Categoria 2"
+      }
+    }
+  },
+  "menu-item#category-teste2": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/teste",
+        "noFollow": false,
+        "tagTitle": "Categoria teste 2",
+        "text": "Categoria teste 2"
+      }
+    }
+  },
+  "menu-item#category-teste3": {
+    "props": {
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Teste 3",
+        "text": "Teste 3"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#category-teste3"
+    ]
+  },
+  "vtex.menu@2.x:submenu#category-teste3": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#menu-more"
+    ]
+  },
+  "flex-layout.row#menu-more": {
+    "children": [
+      "flex-layout.col#menu-more-1",
+      "flex-layout.col#menu-more-2"
+    ]
+  },
+  "flex-layout.col#menu-more-1": {
+    "children": [
+      "vtex.menu@2.x:menu#category-teste3"
+    ]
+  },
+  "flex-layout.col#menu-more-2": {
+    "children": [
+      "info-card#home"
+    ]
+  },
+  "vtex.menu@2.x:menu#category-teste3": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#about-us",
+      "menu-item#faq"
+    ]
+  },
+  "menu-item#about-us": {
+    "props": {
+      "id": "menu-item-about-us",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "About us",
+        "text": "About us"
+      }
+    }
+  },
+  "menu-item#faq": {
+    "props": {
+      "id": "menu-item-faq",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/faq",
+        "noFollow": true,
+        "tagTitle": "FAQ",
+        "text": "FAQ"
+      }
+    }
+  },
+  "menu-item#contact-us": {
+    "props": {
+      "id": "menu-item-contact-us",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Contact Us",
+        "text": "Contact Us"
+      }
+    }
+  }
+}
