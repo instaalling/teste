@@ -2,28 +2,24 @@
 
 This README would normally document whatever steps are necessary to get your application up and running.
 
-### What is this repository for? ###
+Foi utilizado o Store-theme como base para desenvolvimento... 
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+Link:https://github.com/vtex-apps/store-theme
 
-### How do I get set up? ###
+O Header foi desenvolvido na página "/faq"
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+O json referente ao header encontra-se no seguinte caminho: teste > store > blocks > header > header.json
 
-### Contribution guidelines ###
+Como rodar o projeto: 
 
-* Writing tests
-* Code review
-* Other guidelines
+1° Clonar repositório. 
 
-### Who do I talk to? ###
+2° Logar no ambiente desejado. 
 
-* Repo owner or admin
-* Other community or team contact
+3° Criar seu workspace/entrar em um workspace já criado 
+
+4° Rodar o comando vtex browse 
+
+5° Rodar o comando vtex link 
+
+6° Acessar a url /faq 
